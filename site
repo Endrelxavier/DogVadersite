@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Vader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: yellow;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+        }
+        form {
+            margin-top: 30px;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: yellow;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dog Vader</h1>
+        <p>Serviços oferecidos: Day Care e Hotel</p>
+        <p>Horário de funcionamento: 08h às 20h</p>
+        <p>Contato: 1194931-9373</p>
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Nome" required><br>
+            <input type="text" name="sobrenome" placeholder="Sobrenome" required><br>
+            <input type="text" name="nome_cachorro" placeholder="Nome do Cachorro" required><br>
+            <input type="text" name="idade_cachorro" placeholder="Idade do Cachorro" required><br>
+            <select name="castrado" required>
+                <option value="">Selecione se está castrado</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select><br>
+            <select name="servico" required>
+                <option value="">Selecione o serviço</option>
+                <option value="daycare">Day Care</option>
+                <option value="hotel">Hotel</option>
+            </select><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
